@@ -10,10 +10,10 @@ Para a carreira, é prova pública de que você pensa em segurança **durante** 
 
 | Arquivo | Função |
 | --- | --- |
-| `.github/workflows/security.yml` | A esteira, com 4 jobs |
-| `.gitleaks.toml` | Configuração da busca por segredos |
-| `.semgrep/regras-locais.yml` | 3 regras próprias de código (XSS, handler inline, eval) |
-| `.github/dependabot.yml` | Abre PR sozinho quando uma dependência fica desatualizada |
+| `template/.github/workflows/security.yml` | A esteira, com 4 jobs |
+| `template/.gitleaks.toml` | Configuração da busca por segredos |
+| `template/.semgrep/regras-locais.yml` | 3 regras próprias de código (XSS, handler inline, eval) |
+| `template/.github/dependabot.yml` | Abre PR sozinho quando uma dependência fica desatualizada |
 | `vercel.sugerido.json` | Headers de segurança que o portfólio ainda não tem |
 | `scripts/scan-local.mjs` | Varredura simplificada que roda sem instalar nada |
 
@@ -58,9 +58,9 @@ Rodei contra `portfolio-2026`:
 
 ```powershell
 cd C:\Users\telwa\Desktop\Meus\portfolio-2026
-Copy-Item -Recurse ..\devsecops-pipeline\.github .
-Copy-Item -Recurse ..\devsecops-pipeline\.semgrep .
-Copy-Item ..\devsecops-pipeline\.gitleaks.toml .
+Copy-Item -Recurse ..\devsecops-pipeline	emplate.github .
+Copy-Item -Recurse ..\devsecops-pipeline	emplate.semgrep .
+Copy-Item ..\devsecops-pipeline	emplate.gitleaks.toml .
 Copy-Item ..\devsecops-pipeline\vercel.sugerido.json .\vercel.json   # revise antes
 ```
 

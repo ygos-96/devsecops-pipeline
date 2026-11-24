@@ -13,7 +13,7 @@ Práticas aplicadas: token somente leitura, `persist-credentials: false`, `npm c
 
 ## Usar
 
-Copie `.github/`, `.semgrep/` e `.gitleaks.toml` para a raiz do repositório.
+Copie `template/.github/`, `template/.semgrep/` e `template/.gitleaks.toml` para a raiz do seu repositório (ficam em `template/` para a esteira não rodar neste repositório).
 
 `node scripts/scan-local.mjs <pasta>` faz uma varredura simplificada sem instalar nada.
 
