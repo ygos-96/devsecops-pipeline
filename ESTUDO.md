@@ -58,9 +58,9 @@ Rodei contra `portfolio-2026`:
 
 ```powershell
 cd C:\Users\telwa\Desktop\Meus\portfolio-2026
-Copy-Item -Recurse ..\devsecops-pipeline	emplate.github .
-Copy-Item -Recurse ..\devsecops-pipeline	emplate.semgrep .
-Copy-Item ..\devsecops-pipeline	emplate.gitleaks.toml .
+Copy-Item -Recurse ..\devsecops-pipeline\template\.github .
+Copy-Item -Recurse ..\devsecops-pipeline\template\.semgrep .
+Copy-Item ..\devsecops-pipeline\template\.gitleaks.toml .
 Copy-Item ..\devsecops-pipeline\vercel.sugerido.json .\vercel.json   # revise antes
 ```
 
