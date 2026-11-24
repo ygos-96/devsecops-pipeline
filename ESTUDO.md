@@ -51,7 +51,7 @@ Rodei contra `portfolio-2026`:
 
 - **Não rodei a esteira de verdade.** Ela só executa no GitHub Actions. O que verifiquei: os YAML são válidos (parse ok) e a varredura local roda. O primeiro run real pode precisar de ajuste.
 - **Semgrep, gitleaks e Trivy não foram executados localmente** (não instalei binários). `scan-local.mjs` é uma aproximação por regex, não substitui.
-- **Actions fixadas por tag, não por SHA** (`@v4`, `@0.28.0`). O mais seguro é fixar o hash do commit, porque uma tag pode ser reescrita (já houve ataque à cadeia de suprimentos assim). Eu não consegui confirmar os hashes sem acesso ao GitHub, então fica como melhoria. O Dependabot ajuda a manter atualizado.
+- **Actions fixadas por tag, não por SHA** (`@v4`, `@v0.36.0`). O mais seguro é fixar o hash do commit, porque uma tag pode ser reescrita (já houve ataque à cadeia de suprimentos assim). Eu não consegui confirmar os hashes sem acesso ao GitHub, então fica como melhoria. O Dependabot ajuda a manter atualizado.
 - O gitleaks usa Docker (`zricethezav/gitleaks`), disponível nos runners do GitHub.
 
 ## 7. Como aplicar no portfólio
