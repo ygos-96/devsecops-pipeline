@@ -1,5 +1,7 @@
 # Pipeline DevSecOps (GitHub Actions)
 
+[![ci](https://github.com/ygos-96/devsecops-pipeline/actions/workflows/ci.yml/badge.svg)](https://github.com/ygos-96/devsecops-pipeline/actions/workflows/ci.yml)
+
 Esteira de segurança para projetos Node/Vite: segredos, dependências, código e configuração, a cada push, PR e semanalmente.
 
 | Job | Ferramenta | Procura |
