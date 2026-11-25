@@ -1,5 +1,7 @@
 # Estudo: Pipeline DevSecOps no portfólio
 
+> Notas de estudo escritas durante o desenvolvimento. As seções 5 e 6 descrevem o estado da época (esteira ainda não executada no GitHub, actions fixadas por tag e site sem headers de segurança). O [README](README.md) traz o estado atual.
+
 ## 1. O que é e por que existe
 
 Uma **esteira automática** que roda checagens de segurança a cada `git push`, pull request e toda segunda-feira. Você não precisa lembrar. Se algo grave aparecer, o GitHub marca ❌ antes de o código ir para produção.
@@ -57,7 +59,7 @@ Rodei contra `portfolio-2026`:
 ## 7. Como aplicar no portfólio
 
 ```powershell
-cd C:\Users\telwa\Desktop\Meus\portfolio-2026
+cd portfolio-2026
 Copy-Item -Recurse ..\devsecops-pipeline\template\.github .
 Copy-Item -Recurse ..\devsecops-pipeline\template\.semgrep .
 Copy-Item ..\devsecops-pipeline\template\.gitleaks.toml .
@@ -70,7 +72,7 @@ Depois `git push` e veja a aba **Actions** do repositório. Adicione o selo ao R
 Rodar a varredura local:
 
 ```powershell
-node scripts\scan-local.mjs C:\Users\telwa\Desktop\Meus\portfolio-2026
+node scripts/scan-local.mjs ../portfolio-2026
 ```
 
 ## 8. Glossário
